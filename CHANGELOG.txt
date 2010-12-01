@@ -1,0 +1,13 @@
+Version 1.02 - Release Date: August 6, 2006 - Codename: C
+---------------------------------------------------------
+- Minor change to use UTF-8 for form posting
+
+Version 1.01 - Release Date: February 24, 2006 - Codename: B
+------------------------------------------------------------
+-    Add: Constructor will throw IllegalArgumentException if either the API key or blog is null
+- Update: Added checks for null values in parameters passed to akismetCall
+
+Version 1.0 - Release Date: January 6, 2006 - Codename: A
+---------------------------------------------------------
+- Initial Release
+
