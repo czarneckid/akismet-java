@@ -26,6 +26,16 @@
     <build>
         <plugins>
             <plugin>
+                <!--
+                    The test harness program (TestAkismet) can be run easily
+                    from the command line:
+                    
+                    $ mvn exec:java \
+                        -Dakismet.key=YOUR_KEY_HERE \
+                        -Dakismet.blogurl=YOUR_URL_HERE
+                    
+                    The property values can also come from settings.xml.
+                -->
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.2</version>
