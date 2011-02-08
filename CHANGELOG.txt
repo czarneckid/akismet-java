@@ -1,3 +1,7 @@
+Version 1.02-grimoire - Release Date: XXX - Codename: C
+---------------------------------------------------------
+- Build migration from ant to maven
+
 Version 1.02 - Release Date: August 6, 2006 - Codename: C
 ---------------------------------------------------------
 - Minor change to use UTF-8 for form posting

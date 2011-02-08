@@ -26,6 +26,20 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2</version>
+
+                <configuration>
+                    <mainClass>net.sf.akismet.TestAkismet</mainClass>
+                    <arguments>
+                        <argument>${akismet.key}</argument>
+                        <argument>${akismet.blogurl}</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.1</version>
@@ -37,4 +51,10 @@
             </plugin>
         </plugins>
     </build>
+
+    <properties>
+        <!-- Properties for exec:java -->
+        <akismet.key>SET WITH -Dakismet.key</akismet.key>
+        <akismet.blogurl>SET WITH -Dakismet.blogurl</akismet.blogurl>
+    </properties>
 </project>
