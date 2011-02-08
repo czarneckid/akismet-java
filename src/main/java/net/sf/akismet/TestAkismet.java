@@ -1,4 +1,4 @@
-import net.sf.akismet.Akismet;
+package net.sf.akismet;
 
 /**
  * TestAkismet
